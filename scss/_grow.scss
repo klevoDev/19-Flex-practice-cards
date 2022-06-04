@@ -1,0 +1,47 @@
+.grow {
+    &_row {
+        display: flex;
+        margin: 0 -15px;
+    }
+
+    &__column {
+        padding: 0 15px;
+        flex: 0 1 33.3334%;
+    }
+
+    &__item {
+        padding: 40px 31px 25px 31px;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            background: #fff;
+            box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+        }
+    }
+
+    &__wrap-image {
+        margin-bottom: 25px;
+    }
+
+    &__image {
+    }
+
+    &__title {
+        margin-bottom: 17px;
+    }
+
+    &__desc {
+        max-width: 270px;
+
+        margin-bottom: 25px;
+    }
+
+    &__wrap-link {
+    }
+
+    &__more {
+        font-size: 13px;
+        line-height: 150%;
+        color: #000;
+    }
+}

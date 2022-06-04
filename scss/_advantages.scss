@@ -32,10 +32,13 @@
     }
 
     &__item {
-        background: #ffffff;
+        background: #fff;
         padding: 0 0 50px;
+
+        transition: all 0.3s ease 0s;
+
         &:hover {
-            background: #ffffff;
+            background: #fff;
             box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
         }
     }
@@ -49,21 +52,15 @@
     }
 
     &__title {
-        font-size: 24px;
-        line-height: 28px;
         text-align: center;
 
         margin-bottom: 20px;
     }
 
     &__desc {
-        font-size: 15px;
-        line-height: 150%;
         max-width: 310px;
         margin: 0 auto;
         text-align: center;
-
-        color: #aaaaaa;
 
         margin-bottom: 36px;
     }
@@ -86,6 +83,6 @@
         line-height: 150%;
         text-align: center;
 
-        color: #ffffff;
+        color: #fff;
     }
 }
