@@ -1,0 +1,22 @@
+// * ===== fonts ===== * //
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+
+// * ===== null ===== * //
+@import "_nullstyle";
+
+body {
+    font-family: "Gilroy-Bold", Arial, Helvetica, sans-serif;
+}
+
+// * ===== bem blocks ===== * //
+@import "_blocks";
+
+// * ===== header ===== * //
+
+// * ===== main ===== * //
+@import "_page";
+
+// * ===== all sections ===== * //
+@import "_advantages";
+
+// * ===== footer ===== * //
