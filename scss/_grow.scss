@@ -1,5 +1,5 @@
 .grow {
-    &_row {
+    &__row {
         display: flex;
         margin: 0 -15px;
     }
@@ -12,6 +12,10 @@
     &__item {
         padding: 40px 31px 25px 31px;
         transition: all 0.3s ease 0s;
+
+        height: 100%;
+        display: flex;
+        flex-direction: column;
 
         &:hover {
             background: #fff;
@@ -31,8 +35,6 @@
     }
 
     &__desc {
-        max-width: 270px;
-
         margin-bottom: 25px;
     }
 
@@ -43,5 +45,44 @@
         font-size: 13px;
         line-height: 150%;
         color: #000;
+    }
+}
+
+@media (max-width: 1023px) {
+    .grow {
+        &__row {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__column {
+            padding: 15px;
+            flex: 0 1 50%;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .grow {
+        &__column {
+            padding: 15px;
+            flex: 0 1 90%;
+        }
+
+        &__wrap-image {
+            text-align: center;
+        }
+
+        &__title {
+            text-align: center;
+        }
+
+        &__desc {
+            text-align: center;
+        }
+
+        &__wrap-link {
+            text-align: center;
+        }
     }
 }
