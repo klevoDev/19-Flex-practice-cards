@@ -1,4 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+@font-face {
+  font-display: swap;
+  font-family: "Gilroy";
+  src: url("./../fonts/Gilroy-Regular.woff2") format("woff2"), url("./../fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Gilroy-Bold";
+  src: url("./../fonts/Gilroy-Bold.woff2") format("woff2"), url("./../fonts/Gilroy-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Open Sans";
+  src: url("./../fonts/open-sans-v29-latin_cyrillic-700.woff2") format("woff2"), url("./../fonts/open-sans-v29-latin_cyrillic-700.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -45,11 +68,19 @@ h6 {
 }
 
 body {
-  font-family: "Gilroy-Bold", Arial, Helvetica, sans-serif;
+  font-family: "Gilroy";
 }
 
 .container {
   max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.case {
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
   -webkit-box-sizing: content-box;
@@ -77,6 +108,11 @@ body {
 
 .page__grow {
   padding: 100px 0;
+}
+
+.page__logo {
+  background: #f5f5f5;
+  padding: 96px 0;
 }
 
 .advantages__heading {
@@ -143,6 +179,7 @@ body {
 }
 
 .advantages__title {
+  font-family: "Gilroy-Bold";
   text-align: center;
   margin-bottom: 20px;
 }
@@ -260,6 +297,7 @@ body {
 }
 
 .grow__title {
+  font-family: "Gilroy-Bold";
   margin-bottom: 17px;
 }
 
@@ -268,6 +306,7 @@ body {
 }
 
 .grow__more {
+  font-family: "Gilroy-Bold";
   font-size: 13px;
   line-height: 150%;
   color: #000;
@@ -308,4 +347,18 @@ body {
   .grow__wrap-link {
     text-align: center;
   }
+}
+
+.logo__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -24px;
+}
+
+.logo__column {
+  padding: 0 24px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 12%;
+          flex: 0 1 12%;
 }

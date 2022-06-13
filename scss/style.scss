@@ -1,11 +1,11 @@
 // * ===== fonts ===== * //
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+@import "_fonts";
 
 // * ===== null ===== * //
 @import "_nullstyle";
 
 body {
-    font-family: "Gilroy-Bold", Arial, Helvetica, sans-serif;
+    font-family: "Gilroy";
 }
 
 // * ===== bem blocks ===== * //
@@ -19,5 +19,6 @@ body {
 // * ===== all sections ===== * //
 @import "_advantages";
 @import "_grow";
+@import "_logo";
 
 // * ===== footer ===== * //
