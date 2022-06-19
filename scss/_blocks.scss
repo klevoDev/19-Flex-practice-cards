@@ -25,3 +25,18 @@
     color: #aaaaaa;
     flex: 1 1 auto;
 }
+
+.item {
+    padding: 40px 31px 25px 31px;
+    transition: all 0.3s ease 0s;
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.border {
+    width: 70.18px;
+    height: 70px;
+    border-radius: 15px;
+}
